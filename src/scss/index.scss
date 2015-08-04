@@ -88,6 +88,22 @@ p{
   //margin-top:rem(24);
 }
 
+footer{
+  @include outer-container();
+  padding-bottom:rem(200);
+  a:link, a:visited{
+    border-bottom:1px solid $black;
+    padding-top:rem(2);
+    padding-bottom:rem(2);
+    padding-left:rem(5);
+    padding-right:rem(5);
+  }
+  a:hover, a:active{
+    background:$black;
+    color:white;
+  }
+}
+
 
 @import "animation";
 @import "animation--bowser.scss";

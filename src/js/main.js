@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     console.log( "ready!" );
     console.log("bruce");
-    $('section')
+    $('section, footer')
     .waypoint(function(direction) {
       if (direction === 'down') {
         $(this.element).addClass('show');
@@ -16,5 +16,16 @@ $( document ).ready(function() {
       }
   	},{
       offset: '60%'
+    })
+
+    $('footer')
+    .waypoint(function(direction) {
+      if (direction === 'down') {
+        $(this.element).find('a').addClass('show');
+      }
+      else {
+      }
+  	},{
+      offset: 'bottom-in-view'
     })
 });

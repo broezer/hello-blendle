@@ -3,8 +3,9 @@ h1, p, .personalia__pic, .boss__wrapper, .skills-icon, a{
   @include transition(all 700ms $ease-in-out-back)
 }
 
+
+
 .show{
-  top:0;
   opacity:1;
   @include transform(translateY(-20px));
 }
@@ -38,4 +39,12 @@ p.introduction__text{
   &--git{
     @include transition-delay(300ms);
   }
+}
+
+footer a{
+  @include transition(all 300ms ease-in)
+}
+
+footer a.show{
+  @include transform(translateY(0));
 }
