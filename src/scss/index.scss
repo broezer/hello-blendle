@@ -8,7 +8,86 @@ body{
   padding:0;
   background:white;
   width:100%;
-  height:100%;
-  position:absolute;
-  min-width:1200px;
+  padding-top:rem(200);
 }
+
+section{
+  @include outer-container();
+  padding-bottom:rem(125);
+  &.motivatie{
+    padding-bottom:0;
+  }
+  &.contact-me{
+    //padding-bottom:rem(500);
+  }
+}
+
+figure{
+  margin:0;
+}
+
+h1{
+
+  margin-bottom:rem(81);
+}
+
+p{
+  margin-bottom:rem(31);
+}
+
+.personalia{
+  @include row(table);
+}
+
+.personalia__pic{
+  @include span-columns(3);
+  @include pad();
+}
+
+.personalia__text{
+  @include span-columns(8);
+  @include pad(6%);
+  vertical-align:middle;
+}
+
+.boss__img{
+  height:rem(75);
+}
+
+
+.skills__icons{
+
+  li.icon-col{
+    @include span-columns(4);
+    @include omega(3n);
+  }
+}
+
+.btn{
+  border:2px solid $black;
+  display:inline-block;
+  margin-top:rem(64);
+  font-size:em(48);
+  font-weight:700;
+  text-transform:uppercase;
+  padding-top:rem(24);
+  padding-bottom:rem(24);
+  padding-left:rem(80);
+  padding-right:rem(80);
+  background:$black;
+  color:white;
+  &:hover{
+    color:$black;
+    background:white;
+  }
+}
+
+.small{
+  font-size:em(18);
+  clear:both;
+  //margin-top:rem(24);
+}
+
+
+@import "animation";
+@import "animation--bowser.scss";

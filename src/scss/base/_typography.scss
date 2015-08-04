@@ -26,8 +26,8 @@ h6 {
 p {
   margin: 0 0 $small-spacing;
   font-weight:300;
-  font-size:em(18);
-  line-height:rem(28);
+  font-size:em(31);
+  line-height:rem(37);
 }
 
 a {
@@ -61,12 +61,15 @@ picture {
   max-width: 100%;
 }
 
+strong{
+  font-weight:800;
+}
 
 
 /*Headings*/
 h1{
-  font-size:em(50);
-  line-height:rem(70);
+  font-size:em(64);
+  line-height:rem(77);
   font-weight:900;
 }
 
