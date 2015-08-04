@@ -1,0 +1,14 @@
+@import "../../bower_components/bourbon/app/assets/stylesheets/_bourbon";
+@import "base/grid-settings";
+@import "../../bower_components/neat/app/assets/stylesheets/_neat";
+@import "base/base";
+
+body{
+  margin:0;
+  padding:0;
+  background:white;
+  width:100%;
+  height:100%;
+  position:absolute;
+  min-width:1200px;
+}
