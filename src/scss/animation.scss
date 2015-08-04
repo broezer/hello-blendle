@@ -1,0 +1,41 @@
+h1, p, .personalia__pic, .boss__wrapper, .skills-icon, a{
+  opacity:0;
+  @include transition(all 700ms $ease-in-out-back)
+}
+
+.show{
+  top:0;
+  opacity:1;
+  @include transform(translateY(-20px));
+}
+
+a.btn{
+  @include transition(background 250ms ease-out, color 250ms ease-out, opacity 700ms $ease-in-out-back, transform 700ms $ease-in-out-back)
+}
+
+p.introduction__text{
+  @include transition-delay(100ms);
+}
+
+.personalia__pic img{
+  @include transition(all 300ms ease-in);
+  @include transform(scale(0.4));
+}
+
+.personalia__pic.show img{
+  @include transition-delay(200ms);
+  @include transform(scale(1));
+}
+
+
+.skills-icon{
+  &--sass{
+    @include transition-delay(100ms);
+  }
+  &--gulp{
+    @include transition-delay(200ms);
+  }
+  &--git{
+    @include transition-delay(300ms);
+  }
+}

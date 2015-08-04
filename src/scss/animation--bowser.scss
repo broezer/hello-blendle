@@ -1,0 +1,47 @@
+.boss__bowser{
+  position:absolute;
+  left:0%;
+  @include animation(walk  10s infinite linear);
+
+}
+
+@include keyframes(walk) {
+  50% {
+    left:80%
+  }
+}
+
+.boss__img{
+  @include animation(flip  10s infinite);
+}
+
+@include keyframes(flip) {
+  0%{
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  49%{
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(0);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  50% {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  99% {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+}
